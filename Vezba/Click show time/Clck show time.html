@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Vezba</title>
+<head>
+<body >
+
+<button onmouseover="showDate()" onmouseleave ="RemDate()"> Click me 
+</button>
+<p id="date"></p>
+ 
+<script >
+function showDate(){
+	var date =document.getElementById("date");
+	date.innerHTML = Date();
+}
+ function RemDate(){
+ 	var date = document.getElementById("date");
+ 	date.innerHTML = "";
+ }
+ 
+</script> 
+
+<button onclick="showTime(this)"> Click me 
+</button>
+<p id="date"></p>
+ 
+<script >
+
+ function showTime(id){
+ 	id.innerHTML ="You clicked"
+ }
+ 
+</script> 
+</body>
+
+<html>

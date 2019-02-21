@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pako vezba</title>
+</head>
+<body id="body">
+<div class="header">
+	<h1 id="heading">Uci Pavle</h1>
+	</div>
+<div class="container">
+	<form method="post" action="something.php" name="myForm" onsubmit= "return validateForm()">
+	<div>
+		<label> First Name</label>
+		<input type="text" name="firstName" id="firstName">
+   </div>
+<br />
+	<div>
+		<label> Last Name</label>
+		<input type="text" name="lastName" id="lastName">
+	</div>
+<br />
+
+<div>
+	<label>Background</label>
+	<select name="background" id="background" onclick="changeBck(this)">
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+		<option value="blue">Blue</option>
+	</select>	
+</div>
+<br />
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<script>
+
+function changeBck(id){
+	var heading = document.getElementById("heading");
+	heading.style.backgroundColor = id.value;
+}
+	
+
+
+</script>
+v 
+
+
+</body>
+</html>
